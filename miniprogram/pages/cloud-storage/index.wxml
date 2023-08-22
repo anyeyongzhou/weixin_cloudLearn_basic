@@ -1,0 +1,7 @@
+<!--pages/cloud-storage/index.wxml-->
+<button type="primary" bind:tap="onUploadTap">上传文件</button>
+<button type="primary" bind:tap="onDownloadTap">下载文件</button>
+<button type="primary" bind:tap="onDelTap">删除文件</button>
+<button type="primary" bind:tap="onTempTap">临时文件</button>
+
+<image src="{{tempFilePath}}" mode=""/>

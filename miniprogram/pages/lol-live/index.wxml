@@ -1,0 +1,14 @@
+<!--pages/lol-live/index.wxml-->
+<view class="title">英雄联盟的直播房间</view>
+<view class="list">
+    <block wx:for="{{lolList}}" wx:key="rid">
+        <view class="item">
+            <image src="{{item.item.roomSrc}}" mode="widthFix"/>
+            <view>{{item.item.nickname}}--{{item.item.roomName}}</view>
+            <view class="control">
+                <button size="mini" bind:tap="onItemDelTap" data-item="{{item}}" data-index="{{index}}">删除</button>
+                <button size="mini" bind:tap="onItemChangeTap" data-item="{{item}}"  data-index="{{index}}">修改</button>
+            </view>
+        </view>
+    </block>
+</view>

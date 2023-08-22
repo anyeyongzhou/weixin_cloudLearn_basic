@@ -1,0 +1,8 @@
+<!--pages/cloud-database/index.wxml-->
+<button bind:tap="onAddDataTap" type="primary">新增数据</button>
+<button bind:tap="onDelDataTap" type="primary">删除数据</button>
+<button bind:tap="onUpdateDataTap" type="primary">更新数据</button>
+<button bind:tap="onSelectDataTap" type="primary">查询数据</button>
+
+<button bind:tap="onAddLOLDataTap" type="warn" >新增LOL数据</button>
+<button bind:tap="onShowLOLDataTap" type="warn" >展示LOL直播数据</button>
